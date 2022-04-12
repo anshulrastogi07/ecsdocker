@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update -y && apt-get install -y python3.9-dev python-pip
+RUN apt-get update -y && apt reinstall python3-pip
 
 COPY ./requirements.txt /python-app/requirements.txt
 WORKDIR /python-app
